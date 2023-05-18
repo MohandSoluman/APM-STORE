@@ -7,11 +7,12 @@ import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ConvertToSpace } from './shared/convert-to-space.pipe';
 import { StarRatingComponent } from './shared/star-rating/star-rating.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [AppComponent, ProductListComponent,ConvertToSpace, StarRatingComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
